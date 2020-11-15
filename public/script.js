@@ -2,7 +2,7 @@ const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myPeer = new Peer(undefined, {
   host: "/",
-  port: "4001",
+  port: "3001",
 });
 const myVideo = document.createElement("video");
 myVideo.muted = true;
@@ -10,7 +10,7 @@ const peers = {};
 navigator.mediaDevices
   .getUserMedia({
     video: true,
-    // audio: true,
+    audio: true,
   })
   .then((stream) => {
     addVideoStream(myVideo, stream);
