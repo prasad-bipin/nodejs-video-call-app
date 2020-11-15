@@ -1,0 +1,20 @@
+{
+  "name": "live-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "peer": "peerjs --port 4001"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "peer": "^0.5.3",
+    "socket.io": "^3.0.1",
+    "uuid": "^8.3.1"
+  }
+}
